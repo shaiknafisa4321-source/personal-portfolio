@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be6c4fc2cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Shaik</span><br>Nafisa from Nandyal</h1>
+        </div>
+    </div>
+</div>
+<!-------------about------------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class=""subtitle">About Me</h1>
+
+                <p>I’m Nafisa Shaik, a B.Tech AI & ML student and aspiring software developer
+                 passionate about web development and technology.
+                I enjoy building responsive, user-friendly websites
+                 and turning ideas into practical solutions.
+                  With skills in HTML, CSS, JavaScript, Python, SQL, and Flask, 
+                  I’m continuously learning and exploring full-stack development.
+                   I’m driven by curiosity, creativity,
+                 and the desire to build projects that make a real impact</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full Stack Developer</span><br>Design web applications</li>
+                        <li><span>Web Developer</span><br>web app development</li>
+                        <li><span>Campus Ambassador</span><br>Entrepreneur </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2026-present</span><br>Design web applications</li>
+                        <li><span>present</span><br>Internship at Thiranex</li>
+                        <li><span>June 2026-present</span><br>Campus Ambassador, E-Cell, ANU</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>10th from Keshava Reddy Public School</li>
+                        <li><span>2024</span><br>Nucleus Jr College</li>
+                        <li><span>2024-present</span><br>BTech at Acharya Nagarjuna University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Full Stack Web Development</h2>
+                <p>I build dynamic and responsive web applications by combining 
+                    frontend design with backend development and database management 
+                    to create functional and user-friendly digital experiences.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web developer</h2>
+                <p>I create clean, responsive, and visually appealing 
+                    websites using HTML, CSS, JavaScript, and modern web technologies, 
+                    focusing on user experience, functionality, and design.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Campus Ambassador</h2>
+                <p>I promote campus initiatives, connect students 
+                    with learning opportunities, coordinate events, 
+                    and encourage innovation, entrepreneurship, and 
+                    collaboration through leadership and communication.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.jpeg">
+                <div class="layer">
+                   <h3>Campus Ambassador</h3>
+                   <p>Connect students and formed the team and 
+                    experienced leadership qualities, 
+                    problem-solving skills, team management</p> 
+                   <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.jpeg">
+                <div class="layer">
+                   <h3>Web development</h3>
+                   <p>Developing my skills in web development, 
+                    I have learnt skills regarding 
+                    python, HTML, CSS, SQL, Flask
+                   </p> 
+                   <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shaiknafisa4321@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8106553307</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/shaik_nafisa936"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nafisa-shaik-291b4a3a4"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="Nafisa_Shaik_Professional_Resume.pdf" download class="btn btn2"> Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Nafisa <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbytvEspCP0BvuNHO-VvsQmNkefm2J8CvrBgn1RsYsfHpz43yxMVqvU7ZLIyoq3qHeAE/exec'
+	const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+
+</body>
+</html>
